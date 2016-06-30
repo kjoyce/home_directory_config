@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/kjoyce/2014_fall/edge_psf_reconstruction/bibliography'
+let g:netrw_dirhist_2='/home/kjoyce/2014_fall/edge_psf_reconstruction'
+let g:netrw_dirhist_3='/home/kjoyce/2014_fall/edge_psf_reconstruction/psf_reconstruction_variational'
+let g:netrw_dirhist_4='/home/kjoyce/2016_spring/dissertation'
+let g:netrw_dirhist_5='/home/kjoyce/2016_spring/algebra1_tutoring'
+let g:netrw_dirhist_6='/home/kjoyce/2014_fall/edge_psf_reconstruction/PartiallyCollapsedGibbs'

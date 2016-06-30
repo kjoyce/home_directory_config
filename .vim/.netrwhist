@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/kjoyce/2016_spring/dissertation'
+let g:netrw_dirhist_2='/home/kjoyce/2016_spring/dissertation/chapters'
+let g:netrw_dirhist_3='/home/kjoyce/2016_spring/dissertation'
+let g:netrw_dirhist_4='/home/kjoyce/wordsWithFriends'

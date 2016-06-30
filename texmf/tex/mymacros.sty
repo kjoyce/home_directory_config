@@ -1,0 +1,110 @@
+\ProvidesPackage{cmacros}
+
+% MSSM Macros %
+\newcommand{\integral}[1]{ \ensuremath{{\ds{\int #1\,dx}}} }
+\newcommand{\dintegral}[3]{ \ensuremath{{\ds{\int_{#2}^{#3} #1\,dx}} }}
+\renewcommand{\deg}{\ensuremath{ ^\circ }}
+
+\renewcommand{\vec}{\overrightarrow}
+\newcommand{\Reals}{{\mathbb R}}
+\newcommand{\Naturals}{{\mathbb N}}
+\newcommand{\Zinters}{{\mathbb Z}}
+\newcommand{\Qrationals}{{\mathbb Q}}
+\newcommand{\Complexs}{{\mathbb C}}
+\newcommand{\Complexes}{{\mathbb C}}
+\newcommand{\RPn}{{\mathbb R \mathbb P ^n}}
+\newcommand{\RP}[1]{{\mathbb R \mathbb P ^{#1}}}
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\Bd}{\operatorname{Bd}}
+\newcommand{\INT}{\operatorname{Int}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\x}{\times}
+\newcommand{\cl}[1]{\overline{#1}}
+
+\renewcommand{\tilde}{\widetilde}
+
+\newcommand{\contains}{{ \,\supseteq\, }}
+\newcommand{\containedin}{{ \,\subseteq\, }}
+\newcommand{\nonempty}{{ \not= \varnothing}}
+\newcommand{\isempty}{{ = \varnothing}}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\mono}{\texttt}
+
+%Some useful environments.
+%\newtheorem{example}[theorem]{Example}
+%\newtheorem{axiom}{Axiom}
+%\theoremstyle{remark}
+%\newtheorem{remark}{Remark}
+%\newtheorem*{exercise}{Exercise}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{claim}[theorem]{Claim}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{definition}{Definition}
+
+\newcommand{\define}[1]{\textit{\textbf{#1}} }
+
+\renewcommand{\emph}{\textit}
+
+% Will's macros
+%Some useful shortcuts for our favorite fields
+\newcommand{\RR}{{\mathbb R}}
+\newcommand{\NN}{{\mathbb N}}
+\newcommand{\ZZ}{{\mathbb Z}}
+\newcommand{\QQ}{{\mathbb Q}}
+\newcommand{\CC}{{\mathbb C}}
+
+
+\newcommand{\tb}[1]{{\sc Trefethen and Bau }{\bf#1.}}
+\newcommand{\ntwo}[1]{\left\|#1\right\|^2}
+\newcommand{\nv}{^{-1}}
+\newcommand{\Tr}{\text{Tr}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oimp}[1]{\overset{#1}{\Longrightarrow}}
+\newcommand{\bv}[1]{\ensuremath{ \mathbf{\vec{#1}}} }
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\mpg}[1]{\marginpar{ #1}}
+\newcommand{\ra}{\rightarrow}
+
+
+\newcommand{\blankgrid}[1]{
+
+  \setlength{\unitlength}{#1}
+  \begin{picture}(1,1)
+
+  % light lines
+  \linethickness{0.025mm}
+  \multiput(0,0)(.05,0){21}%
+    {\line(0,1){1}}
+  \multiput(0,0)(0,.05){21}%
+    {\line(1,0){1}}
+
+  % dark every 5th line
+  \linethickness{0.05mm}
+  \multiput(0,0)(.25,0){5}%
+    {\line(0,1){1}}
+  \multiput(0,0)(0,.25){5}%
+    {\line(1,0){1}}
+
+  \end{picture}
+  \par
+}
+\newcommand{\blankgraph}[1]{
+
+  \setlength{\unitlength}{#1}
+  \begin{picture}(1,1)
+
+  % dark every 5th line
+  \linethickness{0.05mm}
+  \multiput(0,0)(.5,0){3}%
+    {\line(0,1){1}}
+  \multiput(0,0)(0,.5){3}%
+    {\line(1,0){1}}
+
+  \end{picture}
+  \par
+}

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# parameters
+output="$HOME/.vim/ftplugin/csv.vim"
+title="Working_with_CSV_files"
+
+#Thanks to JB for the "raw" link tip.
+link="http://vim.wikia.com/index.php?action=raw&title=$title"
+
+# margins for the code
+begin="Filetype plugin for editing CSV files"
+end="^augroup END"
+
+# back up old file
+mv $output ${output}_old
+
+# get the new file
+wget -O - -q $link | awk "/$begin/,/$end/{print;next}" > $output
